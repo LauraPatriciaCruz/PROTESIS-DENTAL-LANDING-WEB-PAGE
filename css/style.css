@@ -32,7 +32,7 @@ VARIABLE DEFINE
 ==================*/
 :root {
   --primary-color: #A82C48;
-  --secondry-color: #43121d;
+  --secondary-color: #43121d;
   --white-color: #fff;
   --text-color: #555;
   --text-gray: #999;
@@ -73,18 +73,25 @@ CUSTOM CSS DESIGN
 */
 h1 {
   font-size: 3rem;
-  font-weight: 900;
+  font-weight:900;
   margin-bottom: 3rem;
-  color: var(--secondry-color);
+  color: var(--secondary-color);
+  line-height: 0px;
+  white-space: nowrap;
 }
 
 h2 {
   font-weight: 700;
   font-size: 2.25rem;
   text-transform: capitalize;
-  font-family: var(--secondry-font);
-  color: var(--secondry-color);
-  line-height: 3rem;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  line-height: 5rem;
+}
+
+h3{
+  font-size:1.5rem;
+  color: var(--secondary-color);
 }
 
 .fixed{
@@ -93,8 +100,8 @@ h2 {
 }
 
 h4 {
-  color: var(--secondry-color);
-  font-family: var(--secondry-font);
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
   text-transform: capitalize;
   font-size: 18px;
   font-weight: 800;
@@ -104,7 +111,7 @@ h4 {
 h5 {
   color: var(--primary-color);
   text-transform: capitalize;
-  font-family: var(--secondry-font);
+  font-family: var(--secondary-font);
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -170,12 +177,6 @@ p {
 .text-content {
   width: 70%;
   margin: auto;
-}
-
-.counter-section h2,
-.testimonial-section h2,
-.book-food-text h2 {
-  color: var(--white-color);
 }
 
 /*
@@ -311,7 +312,6 @@ PROMOS
   font-weight: 700;
   color:var(--primary-color);
   padding-bottom:1rem;
-  border-bottom:0.0625rem solid #eee;
   display:flex;
   justify-content:center;             
   align-items:center;
@@ -405,11 +405,16 @@ RESPONSIVE DESIGN
 
     /* custom css */
     h1{
-        font-size:2.8rem;
+        font-size:2.3rem;
     }
     h2{
         font-size:2rem;
         line-height: 2.0625rem;
+        text-align: center;
+    }
+
+    .button-center{
+      text-align: center;
     }
 
     /* top banner */
@@ -420,12 +425,6 @@ RESPONSIVE DESIGN
       background-position: right 30% bottom -100px;
       padding:16.875rem 0 9.375rem;
     }
-
-    /* story section
-    .story-section{
-        height:auto;
-        padding:3rem 0;
-    } */
 }
 
 .btn-wsp {
